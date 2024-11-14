@@ -1,6 +1,7 @@
 import 'package:bca_4th_flutter_2079/dashboard.dart';
 import 'package:bca_4th_flutter_2079/first.dart';
 import 'package:bca_4th_flutter_2079/second.dart';
+import 'package:bca_4th_flutter_2079/stack_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,6 +22,9 @@ class Home extends StatelessWidget {
         },
         "/dashboard": (ctx) {
           return Dashboard();
+        },
+        "/stack": (ctx) {
+          return StackPage();
         },
       },
       initialRoute: "/",
