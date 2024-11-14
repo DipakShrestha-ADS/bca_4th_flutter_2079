@@ -1,5 +1,8 @@
 import 'package:bca_4th_flutter_2079/dashboard.dart';
 import 'package:bca_4th_flutter_2079/first.dart';
+import 'package:bca_4th_flutter_2079/listViewExample/builder_list_view.dart';
+import 'package:bca_4th_flutter_2079/listViewExample/normal_list_view.dart';
+import 'package:bca_4th_flutter_2079/listViewExample/seperated_list_view.dart';
 import 'package:bca_4th_flutter_2079/second.dart';
 import 'package:bca_4th_flutter_2079/stack_page.dart';
 import 'package:flutter/material.dart';
@@ -26,8 +29,17 @@ class Home extends StatelessWidget {
         "/stack": (ctx) {
           return StackPage();
         },
+        "/normal-lv": (ctx) {
+          return NormalListView();
+        },
+        "/builder-lv": (ctx) {
+          return BuilderListView();
+        },
+        "/seperated-lv": (ctx) {
+          return SeperatedListView();
+        },
       },
-      initialRoute: "/",
+      initialRoute: "/seperated-lv",
     );
   }
 }
